@@ -1,15 +1,14 @@
 language: node_js
 
 install:
-  - npm install
-  - npm install -g codecov
-
+- npm install
+- npm install -g codecov
 
 script:
-  - npm run build
-  - npm test
-  - npm run coverage
-  - codecov
+- npm run build
+- npm test
+- npm run coverage
+- codecov
 
 node_js:
 - '6'
@@ -20,6 +19,6 @@ deploy:
   provider: npm
   email: pascal.bertschi@hotmail.com
   api_key:
-    secure: ePbIu5mkl3iRwa+lcZhZdeFIceCfgG4qTXAQwaIUqPQ7joiGNUPdLeF45B87WAjeHHb2Ye/+A3mweojuJUen22zmFiqj+gee5pHLvY0lzCaQ7r2/uFczQjnvCidJmlp725gDrTVdwkCbbj3n3PiwMAoDFZr4gQ3orZTpir736FssGKoIqAojI/n6Xmoy2taNubx5/PfqLHQTVzkHDAHGf4bXOCCOXwg0NYe94Mw5dHNQosjC1j713LFE8HI8q9Fp9cM8W8IeWSkPCDfiEVWkO2FUFGnS7ezK/OF/qAbi0lBz12zgLlmikuXWxlqg8My500almItj2E6W+H+Nh9NzYz6/t7XLGe3wa25+WeDZe78YJZpBSl3S7RBkPs1ufTeUmg5qt3DVyMmdWYSKGZvkvCvlIjVXcPurKomUGdZnwGW2hhR3viCh5dmQc/QhOQX1OUXcsR9ilu1/+6D651O/Hiwas1tsjTcvYmPgxdKRRJDnSC5FrDFPqq2BGmlKfgxP908GGfzX+j+s3Z5I1WbyBtFN8WgiHHFo38KPrVkjOD/m5mhBuGHcIJ1tI3e/o8Z+3EqmKppPUVJXO6WYvIMpBY2pJq/R9O8I9xbqktTwwg9RIgx8fHc52KWbuPSfhb49drsffU/VJwXjrwO4U4nKzGNoa8XkZ6wUalK1wBVmCmQ=
+    secure: H6x8cP0k8ht3qM2E3tFfjTVMSw8H2I2SPMC6KbefV70iG3knfV1u8K2ZXHgV3ui4uUtM/tFFhAf5FpP3hzango0Z78lwz6nrXPnTaC600eMyPysHfIluQkuPM8PP8690Nf2FGWnqCnt5DQ7AWDNBHuqdI9HRO9Lj7iyU7rwxV09Yf8attOYTAzrLBavmAoYSokM9DAtl0kdSK6LeuYkquPzldMyh4dudU+3LwarXWMUmyrIP8uKW05J4Cg8vHTYkvtB85kpob10/MQJlxiQ8GOP0GysVA7T6zC2CGBpQLmGK1z3UmEz+VP9kALJi+inBQ9zm5JFn3uMUPssdNcaQuAri7nx7H/mqp1ms7ztgbGGY4Zjr6f/iSBN1dVMcfK371ZCY8yOEFD/He261l5vp2Q01JulQ3ST5zxl161jQ4hti6mImU+H0E4dpLRkvxQgObJh0vyolaPW2T6c11x7t4aUXbkO9vXYAF0/jNYC0XzYZTbLXZVhwYci8IsX+xJoTSqcnFyUGept4i5O3KkzGUGAyOeifa6e3bZ0UnyRQ44kOUOakBiO5I1OmKMwE9rgJEpPV7aYLmD1P5Mf9esDQHzvdOFQGf9u4pT4lPHxmbWf5mu+JOCeAhjB6fWc+bNG/8bjgZQzYp1z0rHyvomXWxs8HSd9ItXyyQ/DVaCcYySA=
   on:
     tags: true
